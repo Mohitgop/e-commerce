@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body{
+font-family: "Poppins", sans-serif;
+background-color:rgb(255, 255, 255) ;
+}
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+}
+.bg-image{
+  background-image: url("./assets/contact-bg-image.png");
+}
