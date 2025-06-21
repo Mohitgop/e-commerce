@@ -3,10 +3,10 @@ import React from "react";
 function Footer() {
   return (
     <div>
-      <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm mx-24">
+      <div className="flex flex-col sm:grid grid-cols-[3fr_1fr_1fr] gap-14 my-10 mt-40 text-sm md:mx-24 mx-2">
         <div>
           <img
-            src="/assets/logo-C9jKJhBG.png"
+            src="https://res.cloudinary.com/dabo5rgjg/image/upload/v1750501869/ThinKart_Logo_vodm5i.jpg"
             className="mb-5 w-32"
             alt="ThinKart Logo"
           />

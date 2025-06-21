@@ -18,7 +18,7 @@ const About = () => {
           src="https://Chlothzy.shop/assets/about_img-CnrQFd3s.png"
           alt="ThinKart Bodycon Fashion"
         />
-        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600">
+        <div className="flex flex-col justify-center gap-6 md:w-2/4 text-gray-600 mx-2">
           <p>
             <b>ThinKart</b> is your go-to destination for premium fashion that
             speaks elegance, confidence, and modern style. We believe in
@@ -41,8 +41,8 @@ const About = () => {
           </p>
         </div>
       </div>
-      <div className=" text-xl py-4">
-        <div className="inline-flex gap-2 items-center mb-3">
+      <div className=" text-xl py-4 mx-2">
+        <div className="inline-flex gap-2 mx-2 items-center mb-3">
           <p className="text-gray-500">
             WHY <span className="text-gray-700 font-medium">CHOOSE US</span>
           </p>

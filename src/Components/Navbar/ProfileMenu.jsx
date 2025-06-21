@@ -1,7 +1,8 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useContext, useEffect, useRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { FiUser, FiSettings, FiHelpCircle, FiLogOut } from 'react-icons/fi';
 import MenuItem from './MenuItem';
+import { UserContext } from '../../Context/UserContext';
 
 const ProfileMenu = ({ isOpen, onClose }) => {
   const menuRef = useRef();
@@ -23,10 +24,10 @@ const ProfileMenu = ({ isOpen, onClose }) => {
       ${isOpen ? 'opacity-100 scale-100' : 'opacity-0 scale-95 pointer-events-none'}`}
     >
       <ul className="divide-y divide-gray-100 py-2">
-        <MenuItem to="/profile/@mido" label="View Profile" icon={<FiUser />} />
+        {/* <MenuItem to="/profile/@mido" label="View Profile" icon={<FiUser />} />
         <MenuItem to="#" label="Settings" icon={<FiSettings />} />
-        <MenuItem to="#" label="Help" icon={<FiHelpCircle />} />
-        <MenuItem to="#" label="Sign Out" icon={<FiLogOut />} />
+        <MenuItem to="#" label="Help" icon={<FiHelpCircle />} /> */}
+        <MenuItem to="#" label="Sign Out" icon={<FiLogOut />}  />
       </ul>
     </div>
   );

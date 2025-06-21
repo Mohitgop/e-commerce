@@ -4,7 +4,7 @@ import Subscribe from "../../pages/Subscribe";
 
 const Contact = () => {
   return (
-    <div className="mx-24">
+    <div className="md:mx-24 mx-2">
       <div className="text-center text-2xl pt-10  ">
         <div className="inline-flex gap-2 items-center mb-3">
           <p className="text-gray-500">

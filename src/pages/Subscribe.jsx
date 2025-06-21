@@ -4,7 +4,7 @@ const Subscribe = () => {
   return (
     <div class="text-center px-4">
         <p class="text-sm font-semibold text-black mb-2">
-          Join the Chlothzy Style Community
+          Join the ThinKart Style Community
         </p>
         <p class="text-2xl font-medium text-black">
           Subscribe now &amp; get 20% off

@@ -1,65 +1,12 @@
+import { useContext } from "react";
 import ProductCard from "../Components/ProductCard/ProductCard";
+import { ProductContext } from "../Context/ProductContext";
 import Footer from "./Footer";
 import Subscribe from "./Subscribe";
 
-const products = [
-  {
-    name: "Midnight Muse Bodycon",
-    price: 499,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747380323/ocr2jta7ezwll9ufwqad.png",
-  },
-  {
-    name: "Blush Bloom Bodycon",
-    price: 899,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379789/twf5o2qex89xz5az6ydl.jpg",
-  },
-  {
-    name: "Noir Nights Mini Bodycon",
-    price: 499,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379711/fuwn10zvb1iw6meqb4ib.png",
-  },
-  {
-    name: "Pastel Muse Bodycon",
-    price: 899,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379441/t6hk79wco5tdbqa4ve3k.png",
-  },
-  {
-    name: "Pastel Muse Bodycon",
-    price: 899,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379441/t6hk79wco5tdbqa4ve3k.png",
-  },
-  {
-    name: "Midnight Muse Bodycon",
-    price: 499,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747380323/ocr2jta7ezwll9ufwqad.png",
-  },
-  {
-    name: "Blush Bloom Bodycon",
-    price: 899,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379789/twf5o2qex89xz5az6ydl.jpg",
-  },
-  {
-    name: "Noir Nights Mini Bodycon",
-    price: 499,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379711/fuwn10zvb1iw6meqb4ib.png",
-  },
-  {
-    name: "Noir Nights Mini Bodycon",
-    price: 499,
-    image:
-      "https://res.cloudinary.com/dsbdbtrhk/image/upload/v1747379711/fuwn10zvb1iw6meqb4ib.png",
-  },
-];
 
 function Home() {
+  const { products } = useContext(ProductContext);
   return (
     <div className="p-6 ">
       <div className="flex flex-col sm:flex-row border border-gray-400">
@@ -101,9 +48,9 @@ function Home() {
             that speaks your style.
           </p>
         </div>
-        <div className="mx-16">
+        <div className="mx-2 md:mx-16">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-            {products.map((p, i) => (
+            {products.slice(0, 5).map((p, i) => (
               <ProductCard key={i} id={4} product={p} />
             ))}
           </div>
@@ -123,15 +70,16 @@ function Home() {
             with timeless charm.
           </p>
         </div>
-        <div className="mx-16">
+        <div className="md:mx-16 mx-2">
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 gap-y-6">
-            {products.map((p, i) => (
+            {products.slice(5, 10).map((p, i) => (
               <ProductCard key={i} id={4} product={p} />
             ))}
           </div>
         </div>
       </div>
 
+{/* Seconf bottom */}
       <div class="flex flex-col sm:flex-row justify-around gap-12 sm:gap-2 text-center py-20 text-xs sm:text-sm md:text-base text-gray-700">
         <div>
           <img
