@@ -23,7 +23,7 @@ function ProductDetails() {
   const { addToCart } = useContext(CartContext);
   useEffect(() => {
     axios
-      .get(`http://localhost:3000/api/products/${id}`)
+      .get(`https://server-ecommerce-production-812e.up.railway.app/api/products/${id}`)
       .then((res) => {
         setProduct(res.data);
         // console.log("Product details fetched:", res.data);
