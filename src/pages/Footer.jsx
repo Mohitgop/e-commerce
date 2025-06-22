@@ -30,7 +30,7 @@ function Footer() {
           <p className="text-xl font-medium mb-5">GET IN TOUCH</p>
           <ul className="flex flex-col gap-1 text-gray-600">
             <li>
-              <strong>Phone:</strong> 8505835814
+              <strong>Phone:</strong> 8888******
             </li>
             <li>
               <strong>Email:</strong> contact@ThinKart.shop
